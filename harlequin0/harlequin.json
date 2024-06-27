@@ -1,0 +1,31 @@
+{
+  "sprites": [
+    {"id": "body", "path": "body.png", "anchorX": 123, "anchorY": 305, "x": 0, "y": 0, "parent": ""}, 
+    {"id": "armLeft", "path": "armLeft.png", "anchorX": 59, "anchorY": 37, "x": 213, "y": 235, "parent": "body"}, 
+    {"id": "armRight", "path": "armRight.png", "anchorX": 64, "anchorY": 34, "x": 33, "y": 235, "parent": "body"}, 
+    {"id": "thighLeft", "path": "thighLeft.png", "anchorX": 55, "anchorY": 52, "x": 188, "y": 395, "parent": "body"}, 
+    {"id": "thighRight", "path": "thighRight.png", "anchorX": 53, "anchorY": 41, "x": 58, "y": 395, "parent": "body"}, 
+    {"id": "calfLeft", "path": "calfLeft.png", "anchorX": 56, "anchorY": 24, "x": 55, "y": 188, "parent": "thighLeft"}, 
+    {"id": "calfRight", "path": "calfRight.png", "anchorX": 106, "anchorY": 29, "x": 53, "y": 177, "parent": "thighRight"}
+  ], 
+  "cams": [
+    {"id": "body", "off": 0.0, "rise": 10.0, "hold": 0.0, "fall": 10.0}, 
+    {"id": "bodyTwist", "off": 0.0, "rise": 2.0, "hold": 0.0, "fall": 2.0}, 
+    {"id": "armLeft", "off": 2.0, "rise": 0.25, "hold": 0.0, "fall": 0.25}, 
+    {"id": "armRight", "off": 2.0, "rise": 0.25, "hold": 0.0, "fall": 0.25, "advance": 1.25}, 
+    {"id": "thighLeft", "off": 0.0, "rise": 1.0, "hold": 0.0, "fall": 1.0}, 
+    {"id": "calfLeft", "off": 0.0, "rise": 1.0, "hold": 0.0, "fall": 1.0}, 
+    {"id": "thighRight", "off": 0.0, "rise": 1.0, "hold": 0.0, "fall": 1.0}, 
+    {"id": "calfRight", "off": 0.0, "rise": 1.0, "hold": 0.0, "fall": 1.0}
+  ], 
+  "linkages": [
+    {"sprite": "body", "cam": "body", "movement": "XMovement", "scale": 900.0, "offset": 300.0}, 
+    {"sprite": "body", "cam": "bodyTwist", "movement": "AngleMovement", "scale": 0.5, "offset": -0.25}, 
+    {"sprite": "armLeft", "cam": "armLeft", "movement": "AngleMovement", "scale": 1.0, "offset": 3.3}, 
+    {"sprite": "armRight", "cam": "armRight", "movement": "AngleMovement", "scale": -1.0, "offset": 3.0}, 
+    {"sprite": "thighLeft", "cam": "thighLeft", "movement": "AngleMovement", "scale": -0.5, "offset": 0.0}, 
+    {"sprite": "thighRight", "cam": "thighRight", "movement": "AngleMovement", "scale": -0.5, "offset": 0.5}, 
+    {"sprite": "calfLeft", "cam": "calfLeft", "movement": "AngleMovement", "scale": 1.0, "offset": 0.0}, 
+    {"sprite": "calfRight", "cam": "calfRight", "movement": "AngleMovement", "scale": -1.0, "offset": 0.0}
+  ]
+}

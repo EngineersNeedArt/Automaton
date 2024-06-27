@@ -6,6 +6,7 @@ export class Cam {
 	holdTime = 0;			// Time in seconds cam outputs 1.
 	fallTime = 0.5;			// Time in seconds cam takes to fall from 1 to 0.
 	follower = 0;			// Value of follower.
+	identifier = null;
 	
 	constructor(offTime, riseTime, holdTime, fallTime) {
 		this.offTime = offTime;

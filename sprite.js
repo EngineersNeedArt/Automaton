@@ -10,6 +10,7 @@ export class Sprite {
 	anchorY = 0;
 	angle = 0;
 	image = null;
+	identifier = null;
 	parent = null;
 	
 	constructor(imagePath, anchorX = 0, anchorY = 0) {		

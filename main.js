@@ -15,7 +15,6 @@ function resize() {
 
 function windowDidResize() {
 	resize();
-	automaton.draw();
 }
 
 // Resize the canvas when the window is resized
